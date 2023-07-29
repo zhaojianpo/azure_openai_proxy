@@ -20,3 +20,41 @@
     "typescript": "5.1.6"
   }
 }
+{
+
+  "scripts": {
+
+    "start": "node app.js",
+
+    "deploy": "git push deploy master"
+
+  },
+
+  "config": {
+
+    "deploy": {
+
+      "production": {
+
+        "user": "zhaojianpo",
+
+        "host": "20.24.80.116",
+
+        "ref": "origin/master",
+
+        "repo": "ssh://git@20.24.80.116:/root/myapp.git",
+
+        "path": "/var/www/html/myapp",
+
+        "ssh_options": ["StrictHostKeyChecking=no", "PasswordAuthentication=no"],
+
+        "post-deploy": "npm install && pm2 restart app"
+
+      }
+
+    }
+
+  }
+
+}
+
