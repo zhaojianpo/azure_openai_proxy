@@ -38,11 +38,11 @@
 
         "user": "zhaojianpo",
 
-        "host": "20.24.80.116",
+        "host": "20.205.3.233",
 
         "ref": "origin/master",
 
-        "repo": "ssh://git@20.24.80.116:/root/myapp.git",
+        "repo": "ssh://git@20.205.3.233:/root/myapp.git",
 
         "path": "/var/www/html/myapp",
 
